@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('proposals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->timestamps();
         });
 
         Schema::create('proposal_user', function (Blueprint $table) {
